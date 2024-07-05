@@ -22,6 +22,7 @@ jobs:
     outputs:
       output1: ${{ steps.step1.outputs.test }}
     steps:
+      - uses: actions/checkout@v2
       - id: step1
         run: make version >> "$GITHUB_OUTPUT"
 
