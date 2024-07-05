@@ -1,4 +1,5 @@
 run:
+	bundle install
 	@if [ -z "$(file)" ]; then \
 		echo "Usage: make run file=path/to/your/file.dtr"; \
   		exit 1; \
@@ -7,6 +8,3 @@ run:
 
 version:
 	@./digicus_web_backend version
-
-build:
-	bundle install
