@@ -4,3 +4,6 @@ run:
   		exit 1; \
   fi; \
 	./digicus_web_backend $(file)
+
+version:
+	@./digicus_web_backend version

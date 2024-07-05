@@ -17,16 +17,28 @@ ensure
 end
 
 if __FILE__ == $PROGRAM_NAME
-  file_path = ARGV[0]
+  input = ARGV[0]
 
-  if file_path.nil?
-    puts 'Usage: ./digicus_web_backend <file_path>'
-    exit(1)
+  if input == 'version'
+    gemspec_path = 'digicus_web_backend.gemspec'
+
+    # Extract version from gemspec
+    gemspec = File.read(gemspec_path)
+    version_match = gemspec.match(/\.version\s*=\s*["']([^"']+)["']/)
+    version = version_match[1] if version_match
+
+    puts version
+  else
+
+    if input.nil?
+      puts 'Usage: ./digicus_web_backend <file_path>'
+      exit(1)
+    end
+
+    json_for_web = silence_streams do
+      DigicusWebBackend::Compiler.from_dtr(File.read(input))
+    end
+
+    puts json_for_web
   end
-
-  json_for_web = silence_streams do
-    DigicusWebBackend::Compiler.from_dtr(File.read(file_path))
-  end
-
-  puts json_for_web
 end
