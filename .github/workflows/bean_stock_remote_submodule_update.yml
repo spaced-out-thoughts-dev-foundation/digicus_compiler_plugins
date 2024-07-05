@@ -35,7 +35,7 @@ jobs:
         run: bundle install
       - uses: actions/checkout@v2
       - id: make_version
-        run: echo "version=$(make version) >> "$GITHUB_OUTPUT"
+        run: echo "version=$(make version)" >> "$GITHUB_OUTPUT"
 
   output-return-bean-pod-version:
     runs-on: ubuntu-latest
