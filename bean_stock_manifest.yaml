@@ -1,6 +1,6 @@
 name: digicus_web_backend
 type: backend
 version: 0.0.1
-description: Backend for Digicus IDE web application
+description: Backend for Digicus IDE web application. Compiles DTR to JSON.
 command: make run FILEPATH
 author: me@robdurst.com
