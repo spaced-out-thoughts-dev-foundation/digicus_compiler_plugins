@@ -15,6 +15,6 @@ jobs:
       - name: Repository Dispatch
         uses: peter-evans/repository-dispatch@v3
         with:
-          token: ${{ secrets.GITHUB_PAT }}
-          repository: spaced-out-thoughts-dev-foundation/bean_stock
+          token: ${{ secrets.PAT }}
+          repository: spaced-out-thoughts-dev-foundation/bean-stock
           event-type: trigger-workflow
