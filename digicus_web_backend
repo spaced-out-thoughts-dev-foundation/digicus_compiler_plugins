@@ -6,7 +6,7 @@ current_version=$(ruby -e 'puts RUBY_VERSION')
 
 if [[ "$current_version" == "$required_version"* ]]; then
   # Ruby version is correct, run the Ruby script
-  ruby lib/digicus_web_backend.rb "$1"
+  bundle exec ruby lib/digicus_web_backend.rb "$1"
 else
   # Ruby version is incorrect
   echo "Error: Ruby $required_version is required. Current version is $current_version."
