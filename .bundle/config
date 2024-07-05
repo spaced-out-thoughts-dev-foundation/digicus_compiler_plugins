@@ -1,0 +1,3 @@
+---
+BUNDLE_PATH: "bundle_dir"
+BUNDLE_DEPLOYMENT: "true"

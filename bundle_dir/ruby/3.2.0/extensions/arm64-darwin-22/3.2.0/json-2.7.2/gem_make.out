@@ -1,0 +1,16 @@
+current directory: /Users/rob/spaced-out-thoughts-dev-foundation/digicus_web_backend/bundle_dir/ruby/3.2.0/gems/json-2.7.2/ext/json
+/Users/rob/.rvm/rubies/ruby-3.2.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/rob/spaced-out-thoughts-dev-foundation/digicus_web_backend/bundle_dir/ruby/3.2.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240705-99985-fnctoo sitelibdir\=./.gem.20240705-99985-fnctoo clean
+
+current directory: /Users/rob/spaced-out-thoughts-dev-foundation/digicus_web_backend/bundle_dir/ruby/3.2.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240705-99985-fnctoo sitelibdir\=./.gem.20240705-99985-fnctoo
+make: Nothing to be done for `all'.
+
+current directory: /Users/rob/spaced-out-thoughts-dev-foundation/digicus_web_backend/bundle_dir/ruby/3.2.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240705-99985-fnctoo sitelibdir\=./.gem.20240705-99985-fnctoo install
+
+current directory: /Users/rob/spaced-out-thoughts-dev-foundation/digicus_web_backend/bundle_dir/ruby/3.2.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240705-99985-fnctoo sitelibdir\=./.gem.20240705-99985-fnctoo clean
