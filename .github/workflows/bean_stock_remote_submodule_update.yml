@@ -19,11 +19,22 @@ jobs:
           event-type: trigger-workflow
   return-bean-pod-version:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ruby-version: ['3.2.2']
     outputs:
-      output1: ${{ steps.step1.outputs.test }}
+      output1: ${{ steps.make_version.outputs.test }}
     steps:
+      - uses: actions/checkout@v4
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby-version }}
+          bundler-cache: false
+      - name: Install dependencies
+        run: bundle install
       - uses: actions/checkout@v2
-      - id: step1
+      - id: make_version
         run: make version >> "$GITHUB_OUTPUT"
 
   output-return-bean-pod-version:
