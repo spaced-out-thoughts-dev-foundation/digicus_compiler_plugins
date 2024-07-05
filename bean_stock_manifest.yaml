@@ -3,3 +3,4 @@ type: backend
 version: 0.0.1
 description: Backend for Digicus IDE web application
 command: make run FILEPATH
+author: me@robdurst.com
