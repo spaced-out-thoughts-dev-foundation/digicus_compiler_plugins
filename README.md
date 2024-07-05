@@ -10,3 +10,4 @@ We use make as so:
 ```
 make run file=dtr_examples/soroban_logging.dtr
 ```
+
