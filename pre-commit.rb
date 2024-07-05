@@ -4,7 +4,7 @@ require 'yaml'
 
 # Path to your gemspec file and manifest file
 gemspec_path = 'digicus_web_backend.gemspec'
-manifest_path = 'bean_stock_manifest.yml'
+manifest_path = 'bean_stock_manifest.yaml'
 
 # Extract version from gemspec
 gemspec = File.read(gemspec_path)
