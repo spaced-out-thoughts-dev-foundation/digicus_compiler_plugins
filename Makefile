@@ -1,4 +1,6 @@
 run:
+	bundle install --local --deployment > /dev/null 2>&1
+	@echo "Running the application..."
 	@if [ -z "$(file)" ]; then \
 		echo "Usage: make run file=path/to/your/file.dtr"; \
   		exit 1; \
