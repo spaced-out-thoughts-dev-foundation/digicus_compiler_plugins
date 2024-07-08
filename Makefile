@@ -6,4 +6,5 @@ run:
 	bundle exec ruby lib/digicus_web_backend.rb $(file)
 
 version:
+	bundle install && \
 	@./digicus_web_backend version
