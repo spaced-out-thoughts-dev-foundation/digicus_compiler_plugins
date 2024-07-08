@@ -1,0 +1,20 @@
+current directory: /Users/rob/spaced-out-thoughts-dev-foundation/digicus_web_backend/vendor/bundle/ruby/3.2.0/gems/strscan-3.1.0/ext/strscan
+/Users/rob/.rvm/rubies/ruby-3.2.2/bin/ruby extconf.rb
+checking for onig_region_memsize() in ruby.h... yes
+checking for rb_reg_onig_match() in ruby.h... no
+creating Makefile
+
+current directory: /Users/rob/spaced-out-thoughts-dev-foundation/digicus_web_backend/vendor/bundle/ruby/3.2.0/gems/strscan-3.1.0/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20240707-36196-b47dh5 sitelibdir\=./.gem.20240707-36196-b47dh5 clean
+
+current directory: /Users/rob/spaced-out-thoughts-dev-foundation/digicus_web_backend/vendor/bundle/ruby/3.2.0/gems/strscan-3.1.0/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20240707-36196-b47dh5 sitelibdir\=./.gem.20240707-36196-b47dh5
+compiling strscan.c
+linking shared-object strscan.bundle
+
+current directory: /Users/rob/spaced-out-thoughts-dev-foundation/digicus_web_backend/vendor/bundle/ruby/3.2.0/gems/strscan-3.1.0/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20240707-36196-b47dh5 sitelibdir\=./.gem.20240707-36196-b47dh5 install
+/opt/homebrew/opt/coreutils/bin/ginstall -c -m 0755 strscan.bundle ./.gem.20240707-36196-b47dh5
+
+current directory: /Users/rob/spaced-out-thoughts-dev-foundation/digicus_web_backend/vendor/bundle/ruby/3.2.0/gems/strscan-3.1.0/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20240707-36196-b47dh5 sitelibdir\=./.gem.20240707-36196-b47dh5 clean
